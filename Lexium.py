@@ -1,5 +1,13 @@
 #! python3
 
+### TO-DO LIST ###
+#1 Add threading to reduce stalls
+#2 Optimize data transfer
+#3 Add Industrial Protocol Capabilities
+#4 Create path to multiple commands
+#5 Branch out to other product lines
+#6 Increase real-time performance
+
 import socket
 
 ## Class for sending and receiving commands to motor in Python
@@ -10,7 +18,8 @@ class Lexium():
         self.units = units
         if units=='deg':
             self.scale = 142.222
-        self.scale = 51200/pitch*ratio
+        else:
+            self.scale = 51200/pitch*ratio
 
         # Connect to motor at specified IP address
     def Connect(self, ip):
