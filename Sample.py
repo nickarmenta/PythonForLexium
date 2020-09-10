@@ -1,4 +1,4 @@
-import Lexium
+from LexiumMDrive import Lexium
 
 ## Sample Use: Connecting, writing, and reading
 ## Full list of commands can be found here (direct download link):
